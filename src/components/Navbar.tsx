@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, Menu, X, Calendar, Clock, MapPin } from 'lucide-react';
+import { LOGO_ROUND_URL } from '../utils/assets';
 
 interface NavbarProps {
   onOpenBooking: (serviceId?: string) => void;
@@ -36,7 +37,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               aria-label="Rizos Quilleros - Inicio"
             >
               <img
-                src="/assets/brand/rizos_quilleros_logo_round.png"
+                src={LOGO_ROUND_URL}
                 alt="Logo Rizos Quilleros"
                 className="w-10 h-10 md:w-11 md:h-11 rounded-full object-cover shadow-sm transition-transform group-hover:scale-105"
               />
@@ -128,7 +129,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             <div className="space-y-6">
               <div className="pb-4 border-b border-[#46200D]/10 flex items-center gap-3">
                 <img
-                  src="/assets/brand/rizos_quilleros_logo_round.png"
+                  src={LOGO_ROUND_URL}
                   alt="Rizos Quilleros"
                   className="w-10 h-10 rounded-full object-cover shadow-xs"
                 />

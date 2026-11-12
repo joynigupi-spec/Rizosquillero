@@ -1,6 +1,7 @@
 import React from 'react';
 import { MessageCircle, ArrowRight, Sparkles, Check, Heart, Scissors, Droplets } from 'lucide-react';
 import { HibiscusFlower, TropicalLeaf } from './TropicalDecorations';
+import { LOGO_ROUND_URL } from '../utils/assets';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -110,7 +111,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               {/* Main high-res circular logo */}
               <div className="relative z-10 w-64 h-64 sm:w-76 sm:h-76 md:w-84 md:h-84 rounded-full overflow-hidden shadow-2xl bg-white p-1">
                 <img
-                  src="/assets/brand/rizos_quilleros_logo_round.png"
+                  src={LOGO_ROUND_URL}
                   alt="Logotipo oficial de Rizos Quilleros - Especialistas en cabello afro y rizado"
                   className="w-full h-full object-cover rounded-full transition-transform duration-500 hover:scale-105"
                 />

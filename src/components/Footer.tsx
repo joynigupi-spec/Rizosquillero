@@ -1,6 +1,7 @@
 import React from 'react';
 import { MessageCircle, Instagram, Heart, MapPin, Clock } from 'lucide-react';
 import { HibiscusFlower } from './TropicalDecorations';
+import { LOGO_ROUND_URL, HOSTING_ZIP_URL, SOURCE_ZIP_URL } from '../utils/assets';
 
 export const Footer: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
               <img
-                src="/assets/brand/rizos_quilleros_logo_round.png"
+                src={LOGO_ROUND_URL}
                 alt="Rizos Quilleros Logo"
                 className="w-12 h-12 rounded-full object-cover bg-white p-0.5 shadow-sm"
               />
@@ -105,7 +106,7 @@ export const Footer: React.FC = () => {
           {/* Direct ZIP Download Links for Hosting */}
           <div className="flex items-center gap-3">
             <a
-              href="/rizosquilleros-web-hosting.zip"
+              href={HOSTING_ZIP_URL}
               download="rizosquilleros-web-hosting.zip"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#FBBA42] text-[#46200D] hover:bg-[#E6A228] font-bold rounded-lg shadow-xs transition-colors"
               title="Descargar paquete ZIP listo para subir a tu hosting (cPanel, Hostinger, Netlify, Vercel, etc.)"
@@ -113,7 +114,7 @@ export const Footer: React.FC = () => {
               <span>⬇ Descargar ZIP para Hosting</span>
             </a>
             <a
-              href="/rizosquilleros-codigo-fuente.zip"
+              href={SOURCE_ZIP_URL}
               download="rizosquilleros-codigo-fuente.zip"
               className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-white/10 hover:bg-white/20 text-[#F9EEDC] rounded-lg transition-colors"
               title="Descargar código fuente completo del proyecto"

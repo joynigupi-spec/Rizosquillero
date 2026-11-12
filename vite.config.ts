@@ -1,14 +1,16 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
-import {defineConfig} from 'vite';
+import { fileURLToPath, URL } from 'node:url';
+import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
+    // base: './' ensures all assets load properly on GitHub Pages (e.g. https://user.github.io/repo/)
+    base: './',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': fileURLToPath(new URL('.', import.meta.url)),
       },
     },
     server: {
@@ -20,3 +22,4 @@ export default defineConfig(() => {
     },
   };
 });
+

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { X, MessageCircle, Calendar, Clock, Sparkles, Check, Copy, CheckCheck, MapPin } from 'lucide-react';
 import { SERVICES, ServiceItem } from '../data/salonData';
 import { HibiscusFlower } from './TropicalDecorations';
+import { LOGO_ROUND_URL } from '../utils/assets';
 
 interface InteractiveBookingModalProps {
   isOpen: boolean;
@@ -103,7 +104,7 @@ export const InteractiveBookingModal: React.FC<InteractiveBookingModalProps> = (
         <div className="flex items-center justify-between pb-5 border-b border-[#46200D]/10 relative z-10">
           <div className="flex items-center gap-3">
             <img
-              src="/assets/brand/rizos_quilleros_logo_round.png"
+              src={LOGO_ROUND_URL}
               alt="Rizos Quilleros"
               className="w-10 h-10 rounded-full object-cover shadow-xs"
             />
