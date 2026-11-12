@@ -1,0 +1,8 @@
+{
+  "name": "Rizos Quilleros - Peluquería Especializada en Rizos y Afro en Barranquilla",
+  "description": "Landing page oficial de Rizos Quilleros en Barranquilla. Especialistas en corte en seco, definición de rizos, hidratación con ozono, color y cuidado del cabello afro y rizado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
